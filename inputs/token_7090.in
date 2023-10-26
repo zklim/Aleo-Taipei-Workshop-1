@@ -1,0 +1,53 @@
+// The program input for token_7090/src/main.leo
+[mint]
+amount: u64 = 100u64;
+
+[transfer]
+receiver: address = aleo1c5scqc04k9adsg43wcr8jhsfv63lf2z467jc5exupurtuzkv7yqq7kfplc;
+amount: u64 = 100u64;
+input: Token = Token {
+  owner: aleo1c5scqc04k9adsg43wcr8jhsfv63lf2z467jc5exupurtuzkv7yqq7kfplc,
+  balance: 100u64,
+  _nonce: 5674878141523956831165025010472923025425524143123634562843627592547734425571group
+};
+
+[transfer_private_to_public]
+receiver: address = aleo1c5scqc04k9adsg43wcr8jhsfv63lf2z467jc5exupurtuzkv7yqq7kfplc;
+amount: u64 = 100u64;
+input: Token = Token {
+  owner: aleo1c5scqc04k9adsg43wcr8jhsfv63lf2z467jc5exupurtuzkv7yqq7kfplc,
+  balance: 100u64,
+  _nonce: 5674878141523956831165025010472923025425524143123634562843627592547734425571group
+};
+
+[transfer_public]
+receiver: address = aleo1wawcs0vg05tcjawe4jxxr206dyyn0zam9kfp07z0t625x3xg0qrqy5pw5h;
+amount: u64 = 50u64;
+
+[transfer_public_to_private]
+receiver: address = aleo1wawcs0vg05tcjawe4jxxr206dyyn0zam9kfp07z0t625x3xg0qrqy5pw5h;
+amount: u64 = 100u64;
+
+// [join]
+// input: Token = Token {
+//   owner: aleo1c5scqc04k9adsg43wcr8jhsfv63lf2z467jc5exupurtuzkv7yqq7kfplc,
+//   balance: 50u64,
+//   _nonce: 5674878141523956831165025010472923025425524143123634562843627592547734425571group
+// };
+// input_two: Token = Token {
+//   owner: aleo1c5scqc04k9adsg43wcr8jhsfv63lf2z467jc5exupurtuzkv7yqq7kfplc,
+//   balance: 100u64,
+//   _nonce: 5674878141523956831165025010472923025425524143123634562843627592547734425571group
+// };
+
+[join]
+input: Token = Token {
+  owner: aleo1c5scqc04k9adsg43wcr8jhsfv63lf2z467jc5exupurtuzkv7yqq7kfplc,
+  balance: 20u64,
+  _nonce: 4820103206583799981830742267292631676115983556547960476781417750534709988400group
+};
+input_two: Token = Token {
+  owner: aleo1c5scqc04k9adsg43wcr8jhsfv63lf2z467jc5exupurtuzkv7yqq7kfplc,
+  balance: 100u64,
+  _nonce: 4820103206583799981830742267292631676115983556547960476781417750534709988400group
+};
